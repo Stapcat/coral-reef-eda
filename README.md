@@ -18,11 +18,37 @@ by citizen scientists and uploaded via platforms like iNaturalist.
   - Global geographic distribution map
 
 ## 🔍 Key Findings
-- Sea anemones dominate the dataset, likely due to observer bias
-- February and May are peak observation months
-- 70% of records had a January default date — a data quality issue 
-  common in citizen science datasets
-- Observations are concentrated in tropical/subtropical zones
+
+**Dataset:** 1,073 observations of class Anthozoa (corals & anemones) 
+from 9 countries, sourced from GBIF citizen science records (2022–2024).
+
+**1. Geographic distribution**
+Observations are concentrated in tropical and subtropical zones,
+consistent with known coral reef biogeography. The Indo-Pacific
+region (Australia, Philippines, Indonesia, Fiji, Maldives) shows
+strong representation. The Coral Triangle (Philippines, Indonesia)
+is clearly visible as a biodiversity hotspot on the map.
+
+**2. Species composition**
+The most observed species are sea anemones (*Anthopleura sola*,
+*Entacmaea quadricolor*, *Radianthus magnifica*), not hard corals.
+This likely reflects observer bias — anemones are visually striking
+and frequently photographed by divers. The first true hard coral
+appears at position 4 (*Galaxea fascicularis*).
+
+**3. Seasonality**
+After removing a data artifact (January default dates), February,
+March and May emerge as peak observation months. This reflects
+diving seasons in the Southern Hemisphere (Australia, Fiji) where
+summer runs December–February, and pre-monsoon periods in
+tropical Asia where visibility is best in spring.
+
+**4. Data quality note**
+~43% of records had month=1, suggesting missing date metadata
+defaulting to January. This highlights an important limitation of
+citizen science data that should be considered in any downstream
+analysis. After exclusion, all 12 months are represented in the
+remaining dataset.
 
 ## 🛠️ Tools & Libraries
 - Python 3
